@@ -2,7 +2,7 @@
 
 Website responsivo e interativo desenvolvido como Trabalho Prático (TP Final) de Desenvolvimento Web na Fatec Praia Grande.
 
-O projeto apresenta uma cafeteria artesanal fictícia focada em cafés especiais e grãos de pequenos produtores brasileiros.
+🔗 **Acesse o site online (GitHub Pages):** [https://cacique22.github.io/aroma-arte-cafeteria/](https://cacique22.github.io/aroma-arte-cafeteria/)
 
 ---
 
