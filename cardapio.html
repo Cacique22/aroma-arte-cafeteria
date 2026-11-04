@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio &amp; Pedidos | Aroma &amp; Arte</title>
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- 4. Menu em todas as páginas -->
+    <header class="cabecalho-principal">
+        <div class="container barra-navegacao">
+            <a href="index.html" class="marca-logo">
+                ☕ Aroma &amp; Arte <span>Café</span>
+            </a>
+
+            <!-- Botão Menu Mobile -->
+            <button class="btn-mobile" id="btnMobile" aria-label="Abrir menu de navegação">☰</button>
+
+            <!-- 7. Hiperlinks para navegação entre páginas -->
+            <nav>
+                <ul class="menu-links" id="menuLinks">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html" class="ativo">Cardápio &amp; Pedidos</a></li>
+                    <li><a href="contato.html">Contato &amp; Localização</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="secao">
+        <div class="container">
+            <div class="cabecalho-secao">
+                <h2>Cardápio Artesanal</h2>
+                <p>Confira nossa seleção completa de cafés clássicos, autorais e acompanhamentos frescos.</p>
+            </div>
+
+            <!-- 2. TABELA COMPLETA COM ESTILIZAÇÃO CSS -->
+            <div class="tabela-container">
+                <table class="tabela-cardapio">
+                    <caption>Tabela Oficial de Preços e Bebidas</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Descrição / Composição</th>
+                            <th scope="col">Volume</th>
+                            <th scope="col" style="text-align: right;">Preço Unitário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td><span class="categoria-tag">Clássico</span></td>
+                            <td><strong>Espresso Tradicional</strong></td>
+                            <td>Dose pura de café especial, encorpado e com crema densa.</td>
+                            <td>50 ml</td>
+                            <td class="col-preco" style="text-align: right;">R$ 7,50</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td><span class="categoria-tag">Clássico</span></td>
+                            <td><strong>Cappuccino Italiano</strong></td>
+                            <td>Espresso duplo, leite cremoso vaporizado e cacau 70% polvilhado.</td>
+                            <td>180 ml</td>
+                            <td class="col-preco" style="text-align: right;">R$ 13,00</td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td><span class="categoria-tag">Especial</span></td>
+                            <td><strong>Mocha Chocolate Belga</strong></td>
+                            <td>Espresso, ganache artesanal de chocolate belga e chantilly fresco.</td>
+                            <td>220 ml</td>
+                            <td class="col-preco" style="text-align: right;">R$ 16,50</td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td><span class="categoria-tag">Especial</span></td>
+                            <td><strong>Caramel Macchiato</strong></td>
+                            <td>Leite vaporizado, essência de fava de baunilha, espresso e calda toffee.</td>
+                            <td>240 ml</td>
+                            <td class="col-preco" style="text-align: right;">R$ 15,50</td>
+                        </tr>
+                        <tr>
+                            <td>#005</td>
+                            <td><span class="categoria-tag">Gelado</span></td>
+                            <td><strong>Cold Brew Artesanal</strong></td>
+                            <td>Café extraído a frio por 16 horas, servido com pedras de gelo e laranja.</td>
+                            <td>300 ml</td>
+                            <td class="col-preco" style="text-align: right;">R$ 14,00</td>
+                        </tr>
+                        <tr>
+                            <td>#006</td>
+                            <td><span class="categoria-tag">Gelado</span></td>
+                            <td><strong>Iced Latte Baunilha</strong></td>
+                            <td>Dose dupla de espresso gelado, leite integral batido e xarope de baunilha.</td>
+                            <td>350 ml</td>
+                            <td class="col-preco" style="text-align: right;">R$ 15,00</td>
+                        </tr>
+                        <tr>
+                            <td>#007</td>
+                            <td><span class="categoria-tag">Doçaria</span></td>
+                            <td><strong>Croissant de Manteiga</strong></td>
+                            <td>Massa folhada francesa tradicional, crocante por fora e macia por dentro.</td>
+                            <td>Unidade</td>
+                            <td class="col-preco" style="text-align: right;">R$ 11,00</td>
+                        </tr>
+                        <tr>
+                            <td>#008</td>
+                            <td><span class="categoria-tag">Doçaria</span></td>
+                            <td><strong>Bolo Artesanal de Cenoura</strong></td>
+                            <td>Bolo fofinho com cobertura cremosa e generosa de brigadeiro meio amargo.</td>
+                            <td>Fatia</td>
+                            <td class="col-preco" style="text-align: right;">R$ 12,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 3. IMAGENS ILUSTRATIVAS DO CARDÁPIO -->
+            <div class="grid-cards" style="margin-bottom: 3rem;">
+                <article class="card-item">
+                    <div class="card-imagem">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=80" alt="Xícara de Cappuccino com espuma cremosa">
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Cappuccino Cremoso</h3>
+                        <p>O equilíbrio ideal entre a intensidade do café espresso e a doçura aveludada do leite integral vaporizado.</p>
+                    </div>
+                </article>
+
+                <article class="card-item">
+                    <div class="card-imagem">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80" alt="Copo de Cold Brew com gelo">
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Cold Brew Refrescante</h3>
+                        <p>Infusão a frio com baixa acidez, trazendo notas marcantes e refrescância para os dias quentes na praia.</p>
+                    </div>
+                </article>
+
+                <article class="card-item">
+                    <div class="card-imagem">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Croissants fresquinhos na vitrine">
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Confeitaria Diária</h3>
+                        <p>Pães, croissants e bolos assados todas as manhãs na própria casa para acompanhar perfeitamente o seu café.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 6. COMPORTAMENTO DINÂMICO USANDO JAVASCRIPT: SIMULADOR DE PEDIDO INTERATIVO -->
+            <section class="bloco-simulador">
+                <h3>☕ Simulador de Pedido Rápido</h3>
+                <p class="subtitulo">
+                    Monte a sua comanda em tempo real! Escolha os itens abaixo e o JavaScript calculará o total instantaneamente no DOM.
+                </p>
+
+                <form id="formSimulador" class="form-simulador">
+                    <div class="campo-simulador">
+                        <label for="selectProduto">Selecione o Item do Cardápio:</label>
+                        <select id="selectProduto" required>
+                            <option value="1" data-nome="Espresso Tradicional" data-preco="7.50">Espresso Tradicional - R$ 7,50</option>
+                            <option value="2" data-nome="Cappuccino Italiano" data-preco="13.00">Cappuccino Italiano - R$ 13,00</option>
+                            <option value="3" data-nome="Mocha Chocolate Belga" data-preco="16.50">Mocha Chocolate Belga - R$ 16,50</option>
+                            <option value="4" data-nome="Caramel Macchiato" data-preco="15.50">Caramel Macchiato - R$ 15,50</option>
+                            <option value="5" data-nome="Cold Brew Artesanal" data-preco="14.00">Cold Brew Artesanal - R$ 14,00</option>
+                            <option value="6" data-nome="Iced Latte Baunilha" data-preco="15.00">Iced Latte Baunilha - R$ 15,00</option>
+                            <option value="7" data-nome="Croissant de Manteiga" data-preco="11.00">Croissant de Manteiga - R$ 11,00</option>
+                            <option value="8" data-nome="Bolo Artesanal de Cenoura" data-preco="12.00">Bolo de Cenoura - R$ 12,00</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-simulador">
+                        <label for="inputQtd">Quantidade:</label>
+                        <input type="number" id="inputQtd" value="1" min="1" max="20" required>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-primario" style="width: 100%;">+ Adicionar</button>
+                    </div>
+
+                    <div>
+                        <button type="button" id="btnLimparPedido" class="btn btn-secundario" style="width: 100%;">Limpar</button>
+                    </div>
+                </form>
+
+                <!-- Área onde os itens são inseridos no DOM via createElement() e appendChild() -->
+                <div class="area-comanda">
+                    <h4>
+                        <span>Itens na Comanda:</span>
+                        <small style="color: var(--cor-suave); font-weight: normal; font-size: 0.85rem;">Clique em 'Remover' para retirar um item</small>
+                    </h4>
+                    
+                    <ul id="listaPedido">
+                        <li id="itemVazioAviso" style="color: #8c827a; font-style: italic;">Nenhum item selecionado até o momento.</li>
+                    </ul>
+
+                    <div class="total-container">
+                        <span>Valor Total Estimado:</span>
+                        <span id="valorTotal">R$ 0,00</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="grid-rodape">
+                <div class="col-rodape">
+                    <h4>☕ Aroma &amp; Arte Cafeteria</h4>
+                    <p>
+                        Aromas marcantes e receitas feitas com carinho para tornar seu dia especial.
+                    </p>
+                </div>
+                <div class="col-rodape">
+                    <h4>Navegação Rápida</h4>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="cardapio.html">Cardápio &amp; Pedidos</a></li>
+                        <li><a href="contato.html">Localização no Mapa</a></li>
+                    </ul>
+                </div>
+                <div class="col-rodape">
+                    <h4>Dúvidas ou Reservas?</h4>
+                    <p>Precisa de um pedido especial para eventos? Entre em contato pela nossa página de atendimento.</p>
+                    <p style="margin-top: 8px;"><a href="contato.html" style="color: var(--cor-secundaria); font-weight: bold;">Ir para Contato &rarr;</a></p>
+                </div>
+            </div>
+            <div class="rodape-creditos">
+                <p>&copy; 2026 Aroma &amp; Arte Cafeteria - Trabalho Prático (TP Final de Desenvolvimento Web).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Interatividade -->
+    <script src="js/script.js"></script>
+</body>
+</html>

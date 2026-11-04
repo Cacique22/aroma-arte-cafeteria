@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma & Arte | Cafeteria Artesanal</title>
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- 4. Menu em todas as páginas (Navegação com hiperlinks) -->
+    <header class="cabecalho-principal">
+        <div class="container barra-navegacao">
+            <a href="index.html" class="marca-logo">
+                ☕ Aroma &amp; Arte <span>Café</span>
+            </a>
+
+            <!-- Botão Menu Mobile -->
+            <button class="btn-mobile" id="btnMobile" aria-label="Abrir menu de navegação">☰</button>
+
+            <!-- 7. Navegação entre as páginas por meio de hiperlinks -->
+            <nav>
+                <ul class="menu-links" id="menuLinks">
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="cardapio.html">Cardápio &amp; Pedidos</a></li>
+                    <li><a href="contato.html">Contato &amp; Localização</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO (DESTAQUE PRINCIPAL COM IMAGEM) -->
+    <section class="secao-hero">
+        <div class="container grid-hero">
+            <div class="hero-conteudo">
+                <h1>
+                    O despertar perfeito <br>
+                    <span>em cada xícara.</span>
+                </h1>
+                <p>
+                    Selecionamos grãos especiais de pequenos produtores brasileiros para criar uma experiência sensorial inesquecível. Ambiente aconchegante, torra fresca e dedicação em cada extração.
+                </p>
+                <div class="grupo-botoes">
+                    <!-- Hiperlinks de navegação interna -->
+                    <a href="cardapio.html" class="btn btn-primario">Explorar Cardápio</a>
+                    <a href="contato.html" class="btn btn-secundario">Onde Estamos</a>
+                </div>
+            </div>
+            <!-- 3. Imagens de alta qualidade -->
+            <div class="hero-imagem">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Xícara de café latte art sobre uma mesa de madeira">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DIFERENCIAIS DA CAFETERIA -->
+    <main class="secao">
+        <div class="container">
+            <div class="cabecalho-secao">
+                <h2>Por que a Aroma &amp; Arte?</h2>
+                <p>Cada detalhe da nossa casa foi pensado para os verdadeiros apaixonados por café.</p>
+            </div>
+
+            <!-- Grid com 3 Cards de Diferenciais contendo Imagens -->
+            <div class="grid-cards">
+                <article class="card-item">
+                    <div class="card-imagem">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Grãos de café torrados artesanalmente">
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Grãos 100% Arábica</h3>
+                        <p>Grãos de altitude colhidos à mão e torrados semanalmente para preservar notas florais e achocolatadas exclusivas.</p>
+                    </div>
+                </article>
+
+                <article class="card-item">
+                    <div class="card-imagem">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Barista preparando café com técnica de extração">
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Mestres Baristas</h3>
+                        <p>Extrações precisas em métodos filtrados (V60, Prensa Francesa, Aeropress) e espressos com crema aveludada impecável.</p>
+                    </div>
+                </article>
+
+                <article class="card-item">
+                    <div class="card-imagem">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=500&q=80" alt="Ambiente acolhedor da cafeteria com mesas e luz quente">
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Espaço &amp; Conexão</h3>
+                        <p>Um refúgio tranquilo com Wi-Fi veloz, tomadas acessíveis e boa música, ideal para reuniões, leitura e momentos de pausa.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- BANNER DE CONVITE -->
+    <section class="secao" style="background-color: #f1e7dc; border-top: 1px solid var(--cor-borda);">
+        <div class="container" style="text-align: center; max-width: 750px;">
+            <h2 style="font-family: 'Georgia', serif; color: var(--cor-primaria); margin-bottom: 1rem; font-size: 2rem;">Venha nos fazer uma visita</h2>
+            <p style="color: var(--cor-suave); margin-bottom: 1.5rem; font-size: 1.05rem;">
+                Estamos localizados próximos à praia, com estacionamento fácil e atendimento de terça a domingo. Confira nosso cardápio completo e simule seu pedido online!
+            </p>
+            <div class="grupo-botoes" style="justify-content: center;">
+                <a href="cardapio.html" class="btn btn-primario">Ver Tabela de Preços</a>
+                <a href="contato.html" class="btn btn-secundario">Ver Mapa e Endereço</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ COM DADOS DE CONTATO E LINKS -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="grid-rodape">
+                <div class="col-rodape">
+                    <h4>☕ Aroma &amp; Arte Cafeteria</h4>
+                    <p>
+                        Aroma &amp; Arte é uma cafeteria artesanal dedicada à cultura do café especial na Baixada Santista. Paixão, método e acolhimento em cada detalhe.
+                    </p>
+                </div>
+                <div class="col-rodape">
+                    <h4>Navegação Rápida</h4>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="cardapio.html">Cardápio &amp; Pedidos</a></li>
+                        <li><a href="contato.html">Localização no Mapa</a></li>
+                    </ul>
+                </div>
+                <div class="col-rodape">
+                    <h4>Funcionamento</h4>
+                    <p>Terça a Sexta: 08:00 às 20:00</p>
+                    <p>Sábados e Domingos: 09:00 às 21:00</p>
+                    <p>Praia Grande - SP</p>
+                </div>
+            </div>
+            <div class="rodape-creditos">
+                <p>&copy; 2026 Aroma &amp; Arte Cafeteria - Trabalho Prático (TP Final de Desenvolvimento Web).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Interatividade -->
+    <script src="js/script.js"></script>
+</body>
+</html>

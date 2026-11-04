@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato &amp; Localização | Aroma &amp; Arte</title>
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- 4. Menu em todas as páginas -->
+    <header class="cabecalho-principal">
+        <div class="container barra-navegacao">
+            <a href="index.html" class="marca-logo">
+                ☕ Aroma &amp; Arte <span>Café</span>
+            </a>
+
+            <!-- Botão Menu Mobile -->
+            <button class="btn-mobile" id="btnMobile" aria-label="Abrir menu de navegação">☰</button>
+
+            <!-- 7. Hiperlinks para navegação entre páginas -->
+            <nav>
+                <ul class="menu-links" id="menuLinks">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html">Cardápio &amp; Pedidos</a></li>
+                    <li><a href="contato.html" class="ativo">Contato &amp; Localização</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="secao">
+        <div class="container">
+            <div class="cabecalho-secao">
+                <h2>Fale Conosco &amp; Onde Estamos</h2>
+                <p>Venha tomar um café conosco ou envie sua mensagem, dúvida ou sugestão pelo formulário.</p>
+            </div>
+
+            <div class="grid-contato">
+
+                <!-- COLUNA 1: DADOS DE CONTATO E GOOGLE MAPS -->
+                <div class="contato-info">
+                    <h3>Nossa Cafeteria</h3>
+                    <p style="color: var(--cor-suave); margin-bottom: 1.5rem;">
+                        Um ambiente calmo e acolhedor esperando por você. Aceitamos reservas de mesas e encomendas de grãos e sobremesas.
+                    </p>
+
+                    <ul class="lista-contato">
+                        <li>
+                            <span style="font-size: 1.3rem;">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                Av. Presidente Costa e Silva, 800 - Boqueirão, Praia Grande - SP
+                            </div>
+                        </li>
+                        <li>
+                            <span style="font-size: 1.3rem;">📞</span>
+                            <div>
+                                <strong>Telefone / WhatsApp</strong>
+                                (13) 98765-4321 / (13) 3499-0000
+                            </div>
+                        </li>
+                        <li>
+                            <span style="font-size: 1.3rem;">✉️</span>
+                            <div>
+                                <strong>E-mail de Atendimento</strong>
+                                contato@aromaearte.com.br
+                            </div>
+                        </li>
+                        <li>
+                            <span style="font-size: 1.3rem;">⏰</span>
+                            <div>
+                                <strong>Horário de Funcionamento</strong>
+                                Terça a Domingo das 08h às 21h (Segunda fechado para torra)
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- 1. MAPA DO GOOGLE INTEGRADO VIA IFRAME -->
+                    <h4 style="color: var(--cor-primaria); margin-top: 1.5rem; font-size: 1.1rem;">Localização no Mapa:</h4>
+                    <div class="mapa-box">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14578.114751430932!2d-46.41724615!3d-24.0123963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c40f5319889%3A0x6338fb87019e34a7!2sPraia%20Grande%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1715000000000!5m2!1spt-BR!2sbr" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa do Google com a localização da Aroma e Arte Cafeteria em Praia Grande">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- COLUNA 2: FORMULÁRIO COM VALIDAÇÃO DE CAMPOS -->
+                <div class="contato-formulario">
+                    <h3>Envie sua Mensagem</h3>
+                    <p style="color: var(--cor-suave); margin-bottom: 1.5rem;">
+                        Preencha os campos abaixo. Todos os dados são validados antes do envio.
+                    </p>
+
+                    <!-- Mensagem de Sucesso (Exibida pelo JavaScript após validação) -->
+                    <div id="avisoSucesso" class="aviso-sucesso" role="alert">
+                        ✅ Mensagem validada e enviada com sucesso! Entraremos em contato em até 24 horas.
+                    </div>
+
+                    <!-- 5. Formulário com Validação de Campos (HTML5 + JS) -->
+                    <form id="formContato" novalidate>
+                        
+                        <!-- Campo 1: Nome Completo -->
+                        <div class="form-grupo">
+                            <label for="campoNome">Nome Completo <span class="obrigatorio">*</span></label>
+                            <input 
+                                type="text" 
+                                id="campoNome" 
+                                name="nome" 
+                                class="form-controle" 
+                                placeholder="Ex: Lucas Silva" 
+                                required 
+                                minlength="3"
+                                maxlength="60"
+                            >
+                            <span class="mensagem-erro" id="erroNome">Por favor, digite seu nome completo (somente letras, mínimo de 3 caracteres).</span>
+                        </div>
+
+                        <!-- Campo 2: E-mail -->
+                        <div class="form-grupo">
+                            <label for="campoEmail">E-mail <span class="obrigatorio">*</span></label>
+                            <input 
+                                type="email" 
+                                id="campoEmail" 
+                                name="email" 
+                                class="form-controle" 
+                                placeholder="seuemail@exemplo.com" 
+                                required
+                            >
+                            <span class="mensagem-erro" id="erroEmail">Informe um endereço de e-mail válido (ex: nome@dominio.com).</span>
+                        </div>
+
+                        <!-- Campo 3: Telefone / WhatsApp -->
+                        <div class="form-grupo">
+                            <label for="campoTelefone">Telefone / WhatsApp <span class="obrigatorio">*</span></label>
+                            <input 
+                                type="tel" 
+                                id="campoTelefone" 
+                                name="telefone" 
+                                class="form-controle" 
+                                placeholder="(13) 99999-9999" 
+                                required
+                                maxlength="15"
+                            >
+                            <span class="mensagem-erro" id="erroTelefone">Informe um telefone com DDD válido (pelo menos 10 dígitos numéricos).</span>
+                        </div>
+
+                        <!-- Campo 4: Assunto (Select) -->
+                        <div class="form-grupo">
+                            <label for="campoAssunto">Assunto <span class="obrigatorio">*</span></label>
+                            <select id="campoAssunto" name="assunto" class="form-controle" required>
+                                <option value="">-- Selecione o assunto --</option>
+                                <option value="duvidas">Dúvidas sobre o Cardápio</option>
+                                <option value="reserva">Reserva de Mesa / Espaço</option>
+                                <option value="encomendas">Encomenda de Grãos e Bolos</option>
+                                <option value="sugestao">Elogios ou Sugestões</option>
+                            </select>
+                            <span class="mensagem-erro" id="erroAssunto">Selecione uma opção de assunto.</span>
+                        </div>
+
+                        <!-- Campo 5: Mensagem (Textarea) -->
+                        <div class="form-grupo">
+                            <label for="campoMensagem">Mensagem <span class="obrigatorio">*</span></label>
+                            <textarea 
+                                id="campoMensagem" 
+                                name="mensagem" 
+                                class="form-controle" 
+                                rows="5" 
+                                placeholder="Conte-nos como podemos ajudar você..." 
+                                required
+                                minlength="10"
+                            ></textarea>
+                            <span class="mensagem-erro" id="erroMensagem">A mensagem deve conter no mínimo 10 caracteres.</span>
+                        </div>
+
+                        <!-- Botões de Ação -->
+                        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                            <button type="submit" class="btn btn-primario" style="flex: 2;">Enviar Mensagem</button>
+                            <button type="reset" class="btn btn-secundario" style="flex: 1;">Limpar</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="grid-rodape">
+                <div class="col-rodape">
+                    <h4>☕ Aroma &amp; Arte Cafeteria</h4>
+                    <p>
+                        Aroma &amp; Arte é uma cafeteria artesanal dedicada à cultura do café especial na Baixada Santista. Paixão, método e acolhimento em cada detalhe.
+                    </p>
+                </div>
+                <div class="col-rodape">
+                    <h4>Navegação Rápida</h4>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="cardapio.html">Cardápio &amp; Pedidos</a></li>
+                        <li><a href="contato.html">Localização no Mapa</a></li>
+                    </ul>
+                </div>
+                <div class="col-rodape">
+                    <h4>Funcionamento</h4>
+                    <p>Terça a Sexta: 08:00 às 20:00</p>
+                    <p>Sábados e Domingos: 09:00 às 21:00</p>
+                    <p>Praia Grande - SP</p>
+                </div>
+            </div>
+            <div class="rodape-creditos">
+                <p>&copy; 2026 Aroma &amp; Arte Cafeteria - Trabalho Prático (TP Final de Desenvolvimento Web).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Interatividade e Validação -->
+    <script src="js/script.js"></script>
+</body>
+</html>
